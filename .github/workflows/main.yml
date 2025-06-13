@@ -22,3 +22,7 @@ jobs:
           git add ./profile-3d-contrib
           git commit -m "Generate 3D profile contribution graph" || echo "No changes to commit"
           git push
+          permissions:
+            contents: write
+            actions: read
+            id-token: write
